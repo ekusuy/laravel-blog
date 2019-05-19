@@ -50,6 +50,6 @@ class ArticlesController extends Controller
 
     $article->delete();
 
-    return redirect('articles');
+    return redirect('articles')->with('message','記事を削除しました。');
   }
 }
