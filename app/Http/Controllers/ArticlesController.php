@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Http\Requests\ArticleRequest;
-use Carbon\Carbon;
 
 class ArticlesController extends Controller
 {
