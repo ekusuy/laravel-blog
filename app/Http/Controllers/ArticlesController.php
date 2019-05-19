@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Http\Requests\ArticleRequest;
+use Carbon\Carbon;
 
 class ArticlesController extends Controller
 {
   public function index(){
-    $articles = Article::all();
+    // $articles = Article::all();
+    // $articles = Article::orderBy('published_at', 'desc')->orderBy('created_at', 'desc')->get();
+    $articles = Article::latest('published_at')->latest('created_at')
+        ->published()
+        ->get();
 
     return view('articles.index', compact('articles'));
   }
