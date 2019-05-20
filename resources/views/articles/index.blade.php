@@ -2,7 +2,7 @@
 
 @section('content')
   <h1>Articles
-      <a href="articles/create" class="btn btn-primary float-right">新規作成</a>
+      <a ="articles/create" class="btn btn-primary float-right">新規作成</a>
   </h1>
 
   <hr>

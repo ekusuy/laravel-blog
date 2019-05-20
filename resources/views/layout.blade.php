@@ -12,6 +12,7 @@
   <script src="/js/app.js" defer></script>
 </head>
 <body>
+  @include('navbar')
 
   <div class="container py-4">
     {{-- フラッシュメッセージの表示 --}}
